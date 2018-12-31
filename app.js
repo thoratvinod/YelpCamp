@@ -17,7 +17,7 @@ var flash = require("connect-flash");
 
 // mongoose.connect("mongodb://localhost/yelp_camp",{ useNewUrlParser: true });
 
-mongoose.connect("mongodb://thoratvinod111:Vinodthorat4571@@ds145704.mlab.com:45704/yelp_camp");
+mongoose.connect("mongodb://mauli:mauli123@ds145704.mlab.com:45704/yelp_camp");
 
 // ==================================== App Configuration =========================================================
 
