@@ -1,0 +1,33 @@
+#caption{
+    font-size: medium;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+}
+h6{
+    font-family: 'Roboto', sans-serif;
+    font-weight: inherit;
+}
+.myList{
+    font-size: larger;
+    padding-top:5px;
+    padding-bottom: 5px;
+}
+.myContainer{
+    padding:10px;
+    border-radius: 10px;
+    margin:10px;
+}
+.myForm{
+    margin:0 auto;
+    width:30%;
+}
+footer{
+    margin-top: 50px;
+}
+.delete-form{
+    display: inline;
+}
+#div-comment-btn{
+    text-align: right;
+}

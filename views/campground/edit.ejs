@@ -1,0 +1,31 @@
+<%include ../partials/header.ejs%>
+
+
+<div class="myForm">
+	<h1>Update Campground</h2>
+	<form id="newForm" action="/campgrounds/<%= campground._id %>?_method=PUT" method="post">
+	  <div class="form-group">
+	    <label for="campgroundName">Name of Campground : </label>
+	    <input type="text" class="form-control" id="campgroundName" value="<%= campground.name %>" placeholder="Enter Campground Name" name="campground[name]">
+		</div>
+		<div class="form-group">
+	    <label for="campgroundPrice">Name of Campground : </label>
+	    <input type="text" class="form-control" id="campgroundPrice" value="<%= campground.price %>" min="100" step="10" placeholder="Enter Campground Price" name="campground[price]">
+	  </div>
+	  <div class="form-group">
+	    <label for="url">URL of Image : </label>
+	    <input type="text" class="form-control" id="url" value="<%= campground.image %>" placeholder="Image URL" name="campground[image]">
+	  </div>
+	  <div class="form-group">
+	    <label for="desc">Description : </label>
+	    <input type="text" class="form-control" id="desc" value="<%= campground.description %>" placeholder="Description of Campground" name="campground[description]">
+	  </div>
+	  <button type="submit" class="btn btn-primary btn-block">Submit</button><br>
+	  <a href="/campgrounds">Back to Campgrounds</a>
+	</form>
+</div>
+
+
+
+
+<%include ../partials/footer.ejs%>

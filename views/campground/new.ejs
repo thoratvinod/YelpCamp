@@ -1,0 +1,31 @@
+<%include ../partials/header.ejs%>
+
+
+<div class="myForm">
+	<h1>Add New Campgrounds : </h2>
+	<form id="newForm" action="/campgrounds" method="post">
+	  <div class="form-group">
+	    <label for="campgroundName">Name of Campground : </label>
+	    <input type="text" class="form-control" id="campgroundName" placeholder="Enter Campground Name" name="name">
+		</div>
+		<div class="form-group">
+	    <label for="campgroundPrice">Name of Campground : </label>
+	    <input type="number" class="form-control" id="campgroundPrice" placeholder="Enter Campground Price" min="100" step="10" name="price">
+	  </div>
+	  <div class="form-group">
+	    <label for="url">URL of Image : </label>
+	    <input type="text" class="form-control" id="url" placeholder="Image URL" name="image">
+	  </div>
+	  <div class="form-group">
+	    <label for="desc">Description : </label>
+	    <input type="text" class="form-control" id="desc" placeholder="Description of Campground" name="desc">
+	  </div>
+	  <button type="submit" class="btn btn-primary btn-block">Submit</button><br>
+	  <a href="/campgrounds">Back to Campgrounds</a>
+	</form>
+</div>
+
+
+
+
+<%include ../partials/footer.ejs%>

@@ -1,0 +1,18 @@
+<%include ../partials/header.ejs%>
+
+
+<div class="myForm">
+	<h1 id="newTitle">Add New Comments : </h2>
+	<form id="newForm" action="/campgrounds/<%= id %>/comments" method="post">
+	  <div class="form-group">
+	    <label for="text">Text : </label>
+	    <input type="text" class="form-control" id="campgroundName" placeholder="Enter text of comment" name="comment[text]">
+	  </div>
+	  <button type="submit" class="btn btn-primary btn-block">Submit</button><br>
+	</form>
+</div>
+
+
+
+
+<%include ../partials/footer.ejs%>
