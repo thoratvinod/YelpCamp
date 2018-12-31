@@ -15,7 +15,9 @@ var methodOverride = require("method-override");
 var expressSanitizer = require("express-sanitizer");
 var flash = require("connect-flash");
 
-mongoose.connect("mongodb://localhost/yelp_camp",{ useNewUrlParser: true });
+// mongoose.connect("mongodb://localhost/yelp_camp",{ useNewUrlParser: true });
+
+mongoose.connect("mongodb://thoratvinod111:Vinodthorat4571@@ds145704.mlab.com:45704/yelp_camp");
 
 // ==================================== App Configuration =========================================================
 
